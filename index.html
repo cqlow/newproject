@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Home Page</title>
+  <style>
+    h1 {
+      color: #444444;
+      margin: 50px auto 30px;
+    }
+
+    h2 {
+      color: #444444;
+      margin-bottom: 50px;
+    }
+  </style>
+  <script>
+    window.watsonAssistantChatOptions = {
+      integrationID: "9d698065-f1c5-44bf-8f69-35bfef1099cb", // The ID of this integration.
+      region: "us-south", // The region your integration is hosted in.
+      serviceInstanceID: "a316b904-54a7-44de-a893-b34931c28fa7", // The ID of your service instance.
+      onLoad: function (instance) { instance.render(); }
+    };
+    setTimeout(function () {
+      const t = document.createElement('script');
+      t.src = "https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+      document.head.appendChild(t);
+    });
+  </script>
+</head>
+
+<body>
+  <h1>Welcome!</h1>
+  <p>This content is served to you by....</p>
+  <h2>The server</h2>
+  <h1> The weather in {{city}} is {{weather}} </h1>
+  <a href="https://github.com/VincentK16" target="_blank">My GitHub</a>
+  <img src="./static/ubt.jpg" alt="UBT">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/Fb_fVNT3aDo" frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen></iframe>
+
+</body>
+
+</html>
